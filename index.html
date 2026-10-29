@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toys Lovers | Loja de Brinquedos</title>
+  <link rel="icon" href="imagens/MC-LOVERS-LOGO-ICONE.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poller+One&family=Yeseva+One&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header" id="inicio">
+    <nav class="topbar container-wide" aria-label="Navegação principal">
+      <a class="logo" href="index.html">Toys Lovers</a>
+      <form class="search-box" action="https://www.google.com/search" method="get" target="_blank" role="search">
+        <label class="visually-hidden" for="busca">Pesquisar</label>
+        <input id="busca" type="search" name="q" placeholder="Pesquisar brinquedos..." required>
+        <!-- Substitui o domínio quando o site estiver publicado. -->
+        <!-- <input type="hidden" name="as_sitesearch" value="seusite.com.br"> -->
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i> Buscar</button>
+      </form>
+      <ul class="nav-links">
+        <li><a href="#HTML/index.html"><i class="fa-solid fa-house"></i> Início </a></li>
+        <li><a href="#HTML/catalogo_podutos.html"><i class="fa-solid fa-book-open"></i> Catálogo</a></li>
+        <li><a href="#HTML/area_das_crianças.html"><i class="fa-solid fa-gamepad"></i> Comunidade Kids</a></li>
+        <li><a href="#HTML/Sobre_nos.html"><i class="fa-solid fa-store"></i> Loja</a></li>
+      </ul>
+
+      <ul class="nav-link">
+        <li><a href="HTML/cadastro.html" aria-label="Cadastro"><i class="fa-regular fa-user"></i></a></li>
+        <li><a href="HTML/sistema_de_carrinho.html" aria-label="Carrinho"><i class="fa-solid fa-cart-shopping"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="conteudo container-wide" aria-label="Promoções e comunidade">
+    <div id="carouselExampleIndicators" class="carousel slide banner-carousel" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active"><img src="imagens/Brinquedos de Verdade e Diversão.png"
+            alt="Brinquedos de verdade e diversão"></div>
+        <div class="carousel-item"><img src="imagens/Os Melhores Brinquedos pelo Menor Preço.png"
+            alt="Os melhores brinquedos pelo menor preço"></div>
+        <div class="carousel-item"><img src="imagens/Mais que Brinquedos, Momentos Inesquecíveis!.png"
+            alt="Mais que brinquedos, momentos inesquecíveis"></div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span
+          class="visually-hidden">Anterior</span></button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span
+          class="visually-hidden">Próximo</span></button>
+    </div>
+    <div class="img-comunidade-kids">
+      <a href="HTML/area_das_crianças.html" class="community-link">
+        <img src="imagens/Comunidade Kids em Pixel Art.png" alt="Conheça a Comunidade Kids">
+        <span class="community-overlay">Entre na Comunidade Kids <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+    </div>
+  </section>
+
+  <section class="benefits-bar container-wide" aria-label="Benefícios da loja">
+    <div class="benefit-item"><i class="fa-solid fa-truck-fast"></i>
+      <div><strong>Frete Grátis</strong>
+        <p>acima de R$ 199</p>
+      </div>
+    </div>
+    <div class="benefit-item"><i class="fa-solid fa-tags"></i>
+      <div><strong>Melhores Preços</strong>
+        <p>e condições especiais</p>
+      </div>
+    </div>
+    <div class="benefit-item"><i class="fa-solid fa-shield-halved"></i>
+      <div><strong>Produtos Originais</strong>
+        <p>com garantia</p>
+      </div>
+    </div>
+    <div class="benefit-item"><i class="fa-solid fa-headset"></i>
+      <div><strong>Atendimento Especializado</strong>
+        <p>pronto para ajudar</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="container-wide layout-principal">
+    <aside class="sidebar" aria-label="Categorias">
+      <h2 class="sidebar-header"><i class="fa-solid fa-gamepad"></i> Explore o Mundo Toys Lovers</h2>
+      <ul class="sidebar-menu">
+        <li><a href="#index.html"><i class="fa-solid fa-puzzle-piece"></i> Seção</a></li>
+        <li><a href="#HTML/catalogo_produtos.html"><i class="fa-solid fa-robot"></i> Brinquedos</a></li>
+        <li><a href="#HTML/area_das_crianças.html"><i class="fa-solid fa-users"></i> Comunidade Kids</a></li>
+        <li><a href="#HTML/#destaques.html"><i class="fa-solid fa-tag"></i> Ofertas Especiais</a></li>
+      </ul>
+      <div class="sidebar-banner">Diversão para todas as idades!</div>
+    </aside>
+
+    <div class="conteudo-principal">
+      <section class="games-section" id="jogos">
+        <div class="game-callout">
+          <h2>🎮 Jogue Agora!</h2>
+          <p>Acesse nossa área de jogos e desafie seus amigos!</p>
+          <a href="#HTML/area_das_crianças.html" class="action-button">Ir para os Jogos <i
+              class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <img src="imagens/Brinquedos que Viram Histórias.ico"  class="game-ilustration" alt="imagem jogos">
+      </section>
+
+      <section class="section-block" id="catalogo">
+        <div class="section-title">
+          <div>
+            <h2><i class="fa-solid fa-puzzle-piece"></i> Seção</h2>
+            <p>Os brinquedos mais amados pelas nossas crianças!</p>
+          </div><a href="#destaques.html" class="btn-outline-custom">Ver todos →</a>
+        </div>
+        <div class="products-grid">
+          <article class="product-card">
+            <div class="product-placeholder"><i class="fa-solid fa-dice"></i></div>
+            <div class="card-info">
+              <h3>Jogos de Tabuleiro</h3>
+              <p>Reúna a família!</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-placeholder"><i class="fa-solid fa-puzzle-piece"></i></div>
+            <div class="card-info">
+              <h3>Quebra-Cabeças</h3>
+              <p>Mais concentração!</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-placeholder"><i class="fa-solid fa-car"></i></div>
+            <div class="card-info">
+              <h3>Carrinhos e Veículos</h3>
+              <p>Aventura na corrida!</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-placeholder"><i class="fa-solid fa-heart"></i></div>
+            <div class="card-info">
+              <h3>Bonecas e Pelúcias</h3>
+              <p>Amor em forma de brinquedo!</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="mais-vendidos" id="destaques">
+        <div class="cabecalho-vendidos">
+          <div>
+            <h2>♛ Destaques</h2>
+            <p>Os queridinhos da nossa loja! Mais vendidos</p>
+          </div><a href="#HTML/area_das_crianças.html" class="ver-todos">Voltar aos jogos ↑</a>
+        </div>
+        <div class="categoria">
+          <div class="cabecalho-categoria">
+            <h3>🎲 Jogos de Tabuleiro</h3>
+            <p>Reúna a família e divirta-se com os clássicos!</p><span class="preco-inicial">A partir de R$ 24,90</span>
+          </div>
+          <div class="lista-produtos">
+            <article class="produto"><img src="imagens/banco-imobiliario.jpg" alt="Banco Imobiliário">
+              <h4>Banco Imobiliário</h4>
+              <p>Clássico</p>
+              <div class="avaliacao">⭐ 4,8 (1.245)</div>
+              <div class="precos"><del>R$ 79,90</del><span class="desconto">-38%</span></div><strong
+                class="preco-atual">R$ 49,90</strong>
+            </article>
+            <article class="produto"><img src="imagens/jogo-da-vida.jpg" alt="Jogo da Vida">
+              <h4>Jogo da Vida</h4>
+              <p>Clássico</p>
+              <div class="avaliacao">⭐ 4,7 (980)</div>
+              <div class="precos"><del>R$ 69,90</del><span class="desconto">-36%</span></div><strong
+                class="preco-atual">R$ 44,90</strong>
+            </article>
+            <article class="produto"><img src="imagens/detetive.jpg" alt="Detetive">
+              <h4>Detetive</h4>
+              <p>Clássico</p>
+              <div class="avaliacao">⭐ 4,6 (753)</div>
+              <div class="precos"><del>R$ 59,90</del><span class="desconto">-37%</span></div><strong
+                class="preco-atual">R$ 37,90</strong>
+            </article>
+            <article class="produto"><img src="imagens/damas.jpg" alt="Jogo de Damas">
+              <h4>Jogo de Damas</h4>
+              <p>Clássico</p>
+              <div class="avaliacao">⭐ 4,5 (612)</div>
+              <div class="precos"><del>R$ 39,90</del><span class="desconto">-38%</span></div><strong
+                class="preco-atual">R$ 24,90</strong>
+            </article>
+            <article class="produto"><img src="imagens/ludo.jpg" alt="Ludo">
+              <h4>Ludo</h4>
+              <p>Clássico</p>
+              <div class="avaliacao">⭐ 4,7 (501)</div>
+              <div class="precos"><del>R$ 49,90</del><span class="desconto">-34%</span></div><strong
+                class="preco-atual">R$ 32,90</strong>
+            </article>
+          </div>
+        </div>
+        <div class="categoria">
+          <div class="cabecalho-categoria">
+            <h3>🧩 Quebra-Cabeças</h3>
+            <p>Mais concentração, mais diversão!</p><span class="preco-inicial">A partir de R$ 19,90</span>
+          </div>
+          <div class="lista-produtos">
+            <article class="produto"><img src="imagens/patrulha-canina.jpg" alt="Quebra-cabeça Patrulha Canina">
+              <h4>Quebra-Cabeça 100 peças</h4>
+              <p>Patrulha Canina</p>
+              <div class="avaliacao">⭐ 4,8 (1.023)</div>
+              <div class="precos"><del>R$ 34,90</del><span class="desconto">-34%</span></div><strong
+                class="preco-atual">R$ 22,90</strong>
+            </article>
+            <article class="produto"><img src="imagens/dinossauros.jpg" alt="Quebra-cabeça Dinossauros">
+              <h4>Quebra-Cabeça 200 peças</h4>
+              <p>Dinossauros</p>
+              <div class="avaliacao">⭐ 4,6 (842)</div>
+              <div class="precos"><del>R$ 44,90</del><span class="desconto">-33%</span></div><strong
+                class="preco-atual">R$ 29,90</strong>
+            </article>
+            <article class="produto"><img src="imagens/frozen.jpg" alt="Quebra-cabeça Frozen">
+              <h4>Quebra-Cabeça 300 peças</h4>
+              <p>Frozen</p>
+              <div class="avaliacao">⭐ 4,7 (736)</div>
+              <div class="precos"><del>R$ 59,90</del><span class="desconto">-33%</span></div><strong
+                class="preco-atual">R$ 39,90</strong>
+            </article>
+            <article class="produto"><img src="imagens/super-herois.jpg" alt="Quebra-cabeça Super-Heróis">
+              <h4>Quebra-Cabeça 500 peças</h4>
+              <p>Super-Heróis</p>
+              <div class="avaliacao">⭐ 4,5 (621)</div>
+              <div class="precos"><del>R$ 69,90</del><span class="desconto">-29%</span></div><strong
+                class="preco-atual">R$ 49,90</strong>
+            </article>
+            <article class="produto"><img src="imagens/paisagem.jpg" alt="Quebra-cabeça Paisagem">
+              <h4>Quebra-Cabeça 1000 peças</h4>
+              <p>Paisagem</p>
+              <div class="avaliacao">⭐ 4,8 (512)</div>
+              <div class="precos"><del>R$ 89,90</del><span class="desconto">-28%</span></div><strong
+                class="preco-atual">R$ 64,90</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer" id="rodape">
+    <div class="footer-container container-wide">
+      <div class="footer-logo">
+        <h2>Toys Lovers</h2>
+        <p>Brincar é muito melhor juntos! ♥</p>
+      </div>
+      <div class="footer-links"><a href="#inicio">Sobre Nós</a><a href="#rodape">Política de Privacidade</a><a
+          href="#rodape">Termos de Uso</a><a href="#rodape">Fale Conosco</a></div>
+      <div class="footer-social"><a href="https://www.youtube.com/" aria-label="YouTube"><i
+            class="fa-brands fa-youtube"></i></a><a href="https://www.instagram.com/" aria-label="Instagram"><i
+            class="fa-brands fa-instagram"></i></a><a href="https://www.tiktok.com/" aria-label="TikTok"><i
+            class="fa-brands fa-tiktok"></i></a></div>
+      <div class="footer-newsletter">
+        <p>Receba novidades e ofertas especiais!</p>
+        <form id="newsletter-form" class="newsletter-input"><label class="visually-hidden" for="email-newsletter">Seu
+            e-mail</label><input id="email-newsletter" type="email" placeholder="Seu e-mail" required><button
+            type="submit" aria-label="Cadastrar e-mail">→</button></form>
+        <p id="newsletter-feedback" class="newsletter-feedback" aria-live="polite"></p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
